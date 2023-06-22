@@ -54,6 +54,13 @@ header{
   height: 31px;
 }
 
+/* main */
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* home */
 .home{
   margin: 40px;
@@ -63,14 +70,17 @@ header{
   flex-direction: column;
   gap: 80px;
   box-sizing: border-box;
+  justify-content: center;
 }
 .home img{
   width: 100%;
+  object-fit: contain;
 }
 .frase-home{
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  justify-content: center;
   gap: 30px;
   text-align: right;
   box-sizing: border-box;
@@ -301,4 +311,127 @@ footer .container{
   justify-content: space-around;
   padding: 10px;
   box-sizing: border-box;
+}
+
+/* responsive */
+@media (min-width:620px){
+  .desktop, 
+  .productos-desktop,
+  .testimonio-sanyo,
+  .testimonio-navarro{
+    display: flex;
+  }
+  .hamburguesa,
+  .productos-mobile{
+    display: none;
+  }
+  header{
+    justify-content: space-around;
+  }
+  header ul{
+    padding: 0;
+    list-style: none;
+    gap: 10px;
+  }
+  header button{
+    width: 134px;
+    height: 44px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 7px 0px #00000040;
+  }
+  .home{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .home img{
+    max-height: 540px;
+    width: auto;
+  }
+  .frase-home{
+    max-width: 400px;
+  }
+  .frase-home h1{
+    font-size: 40px;
+  }
+  .resumen{
+    background-color: var(--violeta);
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+  }
+  .resumen h4, .resumen p{
+    max-width: 450px;
+  }
+  .resumen h4{
+    font-size: 30px;
+  }
+  .productos-desktop{
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+  }
+  .productos-desktop .card{
+    max-width: 530px;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .productos-desktop .card h5{
+    margin-top: 5px;
+    margin-bottom: 18px;
+    color: var(--azul-medio-oscuro);
+    font-weight: 700;
+    font-size: 16px;
+  }
+  .productos-desktop .card .info{
+    width: 100%;
+  }
+  .productos-desktop .card button{
+    width: 69px;
+    height: 43px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  .teams{
+    background-color: var(--violeta);
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .teams h2{
+    text-align: left;
+  }
+  .teams button{
+    color: var(--violeta);
+    background-color: var(--blanco);
+  }
+  footer .content{
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+  footer .container{
+    width: auto;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  footer .buscador{
+    width: 272px;
+    padding: 0;
+  }
+  .enlaces{
+    /* flex-direction: row; */
+    width: 300px;
+    padding: 0;
+  }
+  .redes-sociales{
+    width: 153.8px;
+    padding: 0;
+  }
 }
