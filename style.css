@@ -16,6 +16,7 @@
   --azul-medio-oscuro: #323851;
   --azul-claro: #3F4868;
   --gris-oscuro: #B9B9C1;
+  --gris-claro: #8C8C94;
   --gris: #B3B2B7;
 }
 *{
@@ -26,12 +27,7 @@ body{
   font-size: 16px;
   font-family: 'Be Vietnam Pro', sans-serif;
 }
-.desktop, 
-.productos-desktop,
-.testimonio-sanyo,
-.testimonio-navarro{
-  display: none;
-}
+
 button{
   outline: none;
   background-color: var(--violeta);
@@ -180,7 +176,13 @@ main{
   letter-spacing: -1%;
   margin-bottom: 80px;
 }
-.testimonio-lebron{
+.testimonios .container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.testimonio{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -191,6 +193,7 @@ main{
   position: relative;
   padding: 70px 27.5px 40px 27.5px;
   box-sizing: border-box;
+  max-width: 445px;
 }
 .testimonios a{
   color: var(--azul-claro);
@@ -260,6 +263,10 @@ footer .content{
   flex-direction: column;
   gap: 50px;
 }
+footer > p {
+  font-size: 12px;
+  color: var(--gris-claro);
+}
 .buscador{
   display: flex;
   flex-direction: row;
@@ -312,13 +319,18 @@ footer .container{
   padding: 10px;
   box-sizing: border-box;
 }
-
+.desktop, 
+.productos-desktop,
+.sanyo,
+.navarro{
+  display: none;
+}
 /* responsive */
 @media (min-width:620px){
   .desktop, 
   .productos-desktop,
-  .testimonio-sanyo,
-  .testimonio-navarro{
+  .sanyo,
+  .navarro{
     display: flex;
   }
   .hamburguesa,
@@ -331,7 +343,7 @@ footer .container{
   header ul{
     padding: 0;
     list-style: none;
-    gap: 10px;
+    gap: 30px;
   }
   header button{
     width: 134px;
@@ -376,6 +388,7 @@ footer .container{
     justify-content: center;
     gap: 40px;
     padding: 40px;
+    background-color: #FAFAFA;
   }
   .productos-desktop .card{
     max-width: 530px;
@@ -399,6 +412,9 @@ footer .container{
     font-size: 16px;
     box-sizing: border-box;
   }
+  .testimonios{
+    margin: 80px 30px;
+  }
   .teams{
     background-color: var(--violeta);
     flex-direction: row;
@@ -411,10 +427,15 @@ footer .container{
     color: var(--violeta);
     background-color: var(--blanco);
   }
+  footer{
+    align-items: flex-end;
+    padding: 40px 10%;
+    gap: 0;
+  }
   footer .content{
     flex-direction: row-reverse;
     align-items: flex-start;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
   footer .container{
     width: auto;
