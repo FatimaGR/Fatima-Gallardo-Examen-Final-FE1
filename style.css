@@ -10,13 +10,26 @@
   --azul-grisáceo-oscuro: #1E1E26;
   --azul-muy-oscuro: #232851;
   --variante-gris-claro: rgb (249, 249, 249);
+  /* otros colores */
+  --variante-violeta-claro: rgba(139, 72, 191, 0.30);
+  --azul-oscuro: #242E53;
+  --azul-medio-oscuro: #323851;
+  --azul-claro: #3F4868;
+  --gris-oscuro: #B9B9C1;
+  --gris: #B3B2B7;
+}
+*{
+  margin: 0;
 }
 body{
-  padding-top: 40px;
+  margin: 0;
   font-size: 16px;
   font-family: 'Be Vietnam Pro', sans-serif;
 }
-.desktop{
+.desktop, 
+.productos-desktop,
+.testimonio-sanyo,
+.testimonio-navarro{
   display: none;
 }
 button{
@@ -30,10 +43,10 @@ button{
 /* header */
 header{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
-  margin-bottom: 80px;
+  margin: 60px;
+  box-sizing: border-box;
 }
 .hamburguesa{
   cursor: pointer;
@@ -44,16 +57,23 @@ header{
 /* home */
 .home{
   margin: 40px;
+  margin-top: 80px;
   max-width: 100%;
   display: flex;
   flex-direction: column;
   gap: 80px;
+  box-sizing: border-box;
 }
 .home img{
   width: 100%;
 }
 .frase-home{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 30px;
   text-align: right;
+  box-sizing: border-box;
 }
 .frase-home h1{
   font-size: 50px;
@@ -66,9 +86,125 @@ header{
   font-size: 13.2px;
   font-weight: 500;
   padding: 15px 40px;
+  width: 134px;
+  height: 44px;
 }
+
 /* resumen */
+.resumen{
+  width: 100%;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  color: var(--blanco);
+  background-color: var(--celeste-brillante);
+  box-sizing: border-box;
+}
+.resumen h4{
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 41.26px;
+  margin: 0;
+}
+.resumen p{
+  line-height: 24.18px;
+  margin: 0;
+}
+
 /* productos */
+.productos-mobile{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: right;
+  gap: 30px;
+  margin: 60px 0;
+  margin-left: 42px;
+  box-sizing: border-box;
+}
+.productos-mobile .card{
+  display: flex;
+  flex-flow: column wrap;
+  gap: 30px;
+}
+.productos-mobile .card > p{
+  padding: 10px;
+  max-width: 408px;
+  color: var(--gris);
+  line-height: 25.52px;
+  letter-spacing: -1%;
+}
+.title{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 20px;
+  background-color: var(--variante-violeta-claro);
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.title button{
+  width: 69px;
+  height: 43px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+.title p{
+  font-weight: 700;
+  color: var(--azul-medio-oscuro);
+  letter-spacing: -1.5%;
+}
+
 /* testimonios */
+.testimonios{
+  margin: 17.5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+.testimonios h3{
+  font-size: 39.21px;
+  color: var(--azul-oscuro);
+  letter-spacing: -1%;
+  margin-bottom: 80px;
+}
+.testimonio-lebron{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  background-color: #FAFAFA;
+  position: relative;
+  padding: 70px 27.5px 40px 27.5px;
+  box-sizing: border-box;
+}
+.testimonios a{
+  color: var(--azul-claro);
+  font-weight: 700;
+}
+.testimonios img{
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  left: 42%;
+  top: -15%;
+}
+.testimonios p{
+  color: var(--gris-oscuro);
+  line-height: 25.06px;
+}
+.testimonios button{
+  cursor: pointer;
+  padding: 10px;
+  font-weight: 500;
+  height: 44px;
+  width: 134px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
 /* teams */
 /* footer */
