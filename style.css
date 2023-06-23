@@ -18,9 +18,6 @@
 *{
   margin: 0;
   font-family: 'Be Vietnam Pro', sans-serif;
-}
-body{
-  margin: 0;
   font-size: 16px;
 }
 button{
@@ -64,7 +61,7 @@ main{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 80px;
+  gap: 5rem;
   box-sizing: border-box;
 }
 .home img{
@@ -76,14 +73,14 @@ main{
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
-  gap: 30px;
+  gap: 1.875rem;
   text-align: right;
   box-sizing: border-box;
 }
 .frase-home h1{
-  font-size: 50px;
+  font-size: 3.125rem;
   font-weight: 700;
-  line-height: 57.3px;
+  line-height: 3.582rem;
   letter-spacing: -3.5%;
   color: var(--azul-muy-oscuro);
 }
@@ -91,7 +88,7 @@ main{
   width: 134px;
   height: 44px;
   padding: 15px 40px;
-  font-size: 13.2px;
+  font-size: 0.825rem;
   font-weight: 500;
 }
 
@@ -101,20 +98,20 @@ main{
   padding: 40px 20px;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 2.5rem;
   color: var(--blanco);
   background-color: var(--celeste-brillante);
   box-sizing: border-box;
 }
 .resumen h4{
   margin: 0;
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 500;
-  line-height: 41.26px;
+  line-height: 2.575rem;
 }
 .resumen p{
   margin: 0;
-  line-height: 24.18px;
+  line-height: 1.5rem;
 }
 
 /* productos */
@@ -122,7 +119,7 @@ main{
   display: flex;
   flex-flow: column wrap;
   justify-content: right;
-  gap: 30px;
+  gap: 1.875rem;
   margin: 60px 0;
   margin-left: 42px;
   box-sizing: border-box;
@@ -130,20 +127,20 @@ main{
 .productos-mobile .card{
   display: flex;
   flex-flow: column wrap;
-  gap: 30px;
+  gap: 1.875rem;
 }
 .productos-mobile .card > p{
   padding: 10px;
   max-width: 408px;
   color: var(--gris);
-  line-height: 25.52px;
+  line-height: 1.595rem;
   letter-spacing: -1%;
 }
 .title{
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  gap: 20px;
+  gap: 1.25rem;
   background-color: rgba(139, 72, 191, 0.30);
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
@@ -151,7 +148,7 @@ main{
 .title button{
   width: 69px;
   height: 43px;
-  font-size: 16px;
+  font-size: 1rem;
   box-sizing: border-box;
 }
 .title p{
@@ -167,11 +164,11 @@ main{
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 60px;
+  gap: 3.75rem;
 }
 .testimonios h3{
   margin-bottom: 80px;
-  font-size: 39.21px;
+  font-size: 2.45rem;
   color: #242E53;
   letter-spacing: -1%;
 }
@@ -186,7 +183,7 @@ main{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 0.938rem;
   text-align: center;
   background-color: #FAFAFA;
   max-width: 445px;
@@ -207,7 +204,7 @@ main{
 }
 .testimonios p{
   color: var(--gris-oscuro);
-  line-height: 25.06px;
+  line-height: 1.567;
 }
 .testimonios button{
   cursor: pointer;
@@ -215,7 +212,7 @@ main{
   height: 44px;
   width: 134px;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.875rem;
   box-sizing: border-box;
 }
 
@@ -226,13 +223,13 @@ main{
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  gap: 2.5rem;
   color: var(--blanco);
   background-color: var(--celeste-brillante);
   box-sizing: border-box;
 }
 .teams h2{
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 500;
   text-align: center;
 }
@@ -250,7 +247,7 @@ footer{
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 1.875rem;
   padding: 50px 0 60px 0;
   color: var(--gris);
   background-color: var(--azul-grisáceo-oscuro);
@@ -260,16 +257,16 @@ footer .content{
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 3.125rem;
 }
 footer > p {
-  font-size: 12px;
+  font-size: 0.75rem;
   color: #8C8C94;
 }
 .buscador{
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 0.625rem;
   width: 100%;
   padding: 10px 50px;
   box-sizing: border-box;
@@ -301,7 +298,7 @@ footer > p {
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0.625rem;
   list-style: none;
   color: var(--blanco);
 }
@@ -318,7 +315,7 @@ footer .container{
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 1.875rem;
 }
 .redes-sociales{
   width: 100%;
@@ -353,10 +350,13 @@ footer .container{
   /* header */
   header{
     justify-content: space-around;
+    gap: 0.938rem;
   }
   header ul{
     padding: 0;
-    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.875rem;
     list-style: none;
   }
   header li a{
@@ -389,7 +389,7 @@ footer .container{
     max-width: 400px;
   }
   .frase-home h1{
-    font-size: 40px;
+    font-size: 2.5rem;
   }
   /* resumen */
   .resumen{
@@ -403,7 +403,7 @@ footer .container{
     max-width: 450px;
   }
   .resumen h4{
-    font-size: 30px;
+    font-size: 1.875rem;
   }
   /* productos */
   .productos-desktop{
@@ -411,7 +411,7 @@ footer .container{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 2.5rem;
     padding: 40px;
     background-color: #FAFAFA;
   }
@@ -419,14 +419,14 @@ footer .container{
     max-width: 530px;
     display: flex;
     align-items: flex-start;
-    gap: 15px;
+    gap: 0.938rem;
   }
   .productos-desktop .card h5{
     margin-top: 5px;
     margin-bottom: 18px;
     color: var(--azul-medio-oscuro);
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
   }
   .productos-desktop .card .info{
     width: 100%;
@@ -434,7 +434,7 @@ footer .container{
   .productos-desktop .card button{
     width: 69px;
     height: 43px;
-    font-size: 16px;
+    font-size: 1rem;
     box-sizing: border-box;
   }
   /* testimonios */
@@ -449,7 +449,7 @@ footer .container{
   }
   .teams h2{
     text-align: left;
-    font-size: 35px;
+    font-size: 2.2rem;
   }
   .teams button{
     color: var(--violeta);
@@ -480,7 +480,7 @@ footer .container{
     padding: 0;
   }
   .redes-sociales{
-    gap: 10px;
+    gap: 0.625rem;
     width: 153.8px;
     padding: 0;
   }
