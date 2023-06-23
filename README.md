@@ -5,7 +5,7 @@ Esta es mi solución al examen práctico final del curso de Front End 1  🎾✨
 ## Resultado
 ![](./imagenes/sportit-resultado.png)
 
-### El reto
+## El reto
 Su desafío es crear esta página de destino y hacer que se parezca lo más posible al diseño.
 
 Sus usuarios deberían poder:
@@ -24,6 +24,6 @@ Sus usuarios deberían poder:
 
 Puedes ver más información sobre el reto en la carpeta "guia", donde se encuentran las indicaciones, guía de estilos e imágenes del diseño.
 
-### Links
+## Links
 - Código en Github: [Fátima Gallardo Examen Final FE1](https://github.com/FatimaGR/Fatima-Gallardo-Examen-Final-FE1)
-- Live Site URL: []()
+- Live Site URL: [Sportit](https://fatima-gallardo-examen-final-fe-1.vercel.app)
